@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <script src="calc.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.css"
+  type='text/css' rel='stylesheet'/>
+
+
+</head>
+<body>
+  <div class="content is-medium">
+  <h1 class="title is-spaced is-paddingless">Type the numbers to be calculated: </h1>
+
+  <div class="field">
+    <p class="conrol">
+      <input class="input is-primary" type="text" id="firstNumber">
+
+      <input class="input is-primary" type="text" id="secondNumber">
+    </p>
+  </div>
+
+<div class='buttons'>
+    <button class="button is-primary is-medium" onclick="add()">Add'+'</button>
+    <button class="button is-primary is-medium" onclick="sub()">Subtract '-'</button>
+    <button class="button is-primary is-medium" onclick="mul()">Multiply '*'</button>
+    <button class="button is-primary is-medium" onclick="div()">Divide '/'</button>
+    <button class="button is-danger is-medium is-outlined" onclick="cl()">C</button>
+</div>
+<br>
+  <output id="output" type="text" size="4">
+</div>
+
+</body>
+</html>
